@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { websiteSchema } from '@/lib/schema'
 import { MotionProvider } from '@/components/layout/MotionProvider'
+import { Navbar } from '@/components/layout/Navbar'
 import './globals.css'
 
 const inter = Inter({
@@ -62,6 +63,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans text-slate-800 bg-white antialiased">
         <MotionProvider>
+          <Navbar />
           {children}
         </MotionProvider>
         {GA_ID && (
