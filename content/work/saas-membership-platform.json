@@ -1,0 +1,13 @@
+{
+  "slug": "saas-membership-platform",
+  "title": "SaaS Platform — Multi-Tenant Web Application for Membership Management",
+  "client": "Sports club, Mumbai",
+  "stack": ["React", "NestJS", "PostgreSQL", "Prisma", "Docker"],
+  "duration": "Ongoing",
+  "summary": "Building a multi-tenant SaaS platform allowing sports clubs to manage memberships, bookings, payments and reporting from a single dashboard.",
+  "problem": "The client was managing 500+ members via spreadsheets. No online booking, no automated renewals, no reporting. Staff spent hours on manual data entry and reconciliation. Members had no way to self-serve.",
+  "solution": "We are building a multi-tenant NestJS backend with a React dashboard. Each club gets its own isolated data environment with role-based access control. Features include member management, booking calendar, Stripe payment integration for dues and renewals, automated email reminders, and exportable reports.",
+  "result": "In active development. First tenant onboarded and providing feedback. Member self-service portal has reduced front-desk queries by an estimated 60% in the pilot phase.",
+  "metaTitle": "Multi-Tenant SaaS Development Case Study | NestJS + React | Simple Inc",
+  "metaDescription": "Case study: Simple Inc building a multi-tenant SaaS platform for sports club management using React, NestJS and PostgreSQL."
+}

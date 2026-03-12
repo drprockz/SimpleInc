@@ -1,0 +1,13 @@
+{
+  "slug": "tailoring-shop-erp",
+  "title": "Tailoring Shop ERP — Custom Order & Customer Management System",
+  "client": "Independent tailoring business, Mumbai",
+  "stack": ["Next.js 14", "PostgreSQL", "Prisma", "BullMQ", "WhatsApp API"],
+  "duration": "8 weeks",
+  "summary": "Built a full ERP for a tailoring shop replacing WhatsApp chaos and paper notebooks with a digital order tracking, measurement, and notification system.",
+  "problem": "The client was managing 200+ active orders via WhatsApp messages and paper. Orders got lost. Delivery dates were missed. Customers had to call to check status. The owner spent 3+ hours daily just on follow-ups and status checks.",
+  "solution": "We built a custom ERP with order management, customer profiles, measurement storage, automated WhatsApp and SMS status updates via BullMQ job queues, and a real-time dashboard showing the complete order pipeline. Each order moves through stages (received → measured → cutting → stitching → ready → delivered) with automatic customer notifications at each transition.",
+  "result": "Zero missed orders since launch. Customer satisfaction measurably improved with real-time status updates. The owner spends 2 hours less per day on manual follow-ups. Repeat customer rate increased as the system now sends automated reminders for seasonal orders.",
+  "metaTitle": "Tailoring Shop ERP Case Study | Next.js + WhatsApp API | Simple Inc",
+  "metaDescription": "How Simple Inc built a custom order management ERP for a Mumbai tailoring business using Next.js, PostgreSQL, and WhatsApp automation."
+}
