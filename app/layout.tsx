@@ -5,6 +5,7 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { websiteSchema } from '@/lib/schema'
 import { MotionProvider } from '@/components/layout/MotionProvider'
 import { Navbar } from '@/components/layout/Navbar'
+import { Footer } from '@/components/layout/Footer'
 import './globals.css'
 
 const inter = Inter({
@@ -65,6 +66,7 @@ export default function RootLayout({
         <MotionProvider>
           <Navbar />
           {children}
+          <Footer />
         </MotionProvider>
         {GA_ID && (
           <>
