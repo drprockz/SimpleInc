@@ -122,6 +122,17 @@ simpleinc.in/
 
 ## 5. Page-by-Page Design
 
+### 5.0 Services Overview (`/services`)
+
+- Title: `Web Development Services in Mumbai | SaaS, Websites, AI | Simple Inc`
+- Meta: `Explore Simple Inc's development services — custom web applications, SaaS products, business websites, AI integration, and CMS/e-commerce solutions. Mumbai-based agency.`
+- H1: "Our Services"
+- Canonical: `https://www.simpleinc.in/services`
+
+Simple overview page displaying the 4 service cards (same component as homepage Section 2) with links to individual service pages. Brief intro paragraph above the grid. CTA section at bottom → /contact.
+
+---
+
 ### 5.1 Homepage (`/`)
 
 **SEO:**
@@ -163,7 +174,7 @@ simpleinc.in/
 **Section 5 — Testimonials** (bg: white)
 - H2: "What Clients Say"
 - 2–3 testimonial cards with sky-500 left border. Quote, name, company type.
-- Slide-in from left on scroll. Placeholder quotes initially.
+- Slide-in from left on scroll. Placeholder quotes initially — must be replaced with real testimonials before launch. Do not ship placeholder quotes to production.
 
 **Section 6 — Process** (bg: slate-50)
 - H2: "How We Work"
@@ -325,7 +336,7 @@ All service pages share a common template structure:
 - Title: `Web Development Blog | SaaS, Web Apps & AI Insights | Simple Inc`
 - Meta: `Tips, guides, and insights on web application development, SaaS, AI integration, and building for the Indian market — by Simple Inc, Mumbai.`
 - H1: "Blog"
-- Post list sorted by date. Pagination at 10+.
+- Post list sorted by date. Numbered pagination at 10+ posts (e.g., 1, 2, 3 — no infinite scroll).
 
 **`/blog/[slug]`**
 - MDX rendering. Article JSON-LD with author, dates.
