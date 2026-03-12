@@ -2,28 +2,28 @@
 
 ## Project Overview
 
-**Project:** Simple Inc — Personal agency website rebuild  
-**Owner:** Darshan Parmar  
-**Domain:** simpleinc.in  
-**Domain age:** 2021 (established — good for SEO)  
-**Email:** darshan@simpleinc.in  
-**Location:** Mumbai, India  
-**Goal:** Replace the current Wize portfolio template with a custom-coded, SEO-optimised agency site that converts cold email recipients, warm referrals, and organic search visitors into paying clients
+**Project:** Simple Inc — Web development agency website
+**Owner:** Darshan Parmar
+**Domain:** simpleinc.in
+**Domain age:** 2021 (established — good for SEO)
+**Email:** darshan@simpleinc.in
+**Location:** Mumbai, India
+**Goal:** Custom-coded, SEO-optimised agency site that converts cold email recipients, warm referrals, and organic search visitors into paying clients
 
-This is not a template job. You are coding a real agency website from scratch. Every decision — copy, structure, meta tags, schema, page speed — must serve both conversion and search ranking.
+This is not a template job. This is a real agency website coded from scratch. Every decision — copy, structure, meta tags, schema, page speed — must serve both conversion and search ranking.
 
 ---
 
 ## Owner Profile (Critical Context)
 
 - **Name:** Darshan Parmar
-- **Role:** Full-stack developer, 5+ years experience
+- **Role:** Founder & Lead Developer, 5+ years experience
 - **Current stack:** React, Vue, NestJS, Node.js, WordPress, PHP, Shopify Liquid, headless CMS, multi-tenant SaaS
-- **Agency:** Simple Inc (simpleinc.in) — freelance/agency hybrid
-- **Positioning:** Senior full-stack developer who builds production-grade web systems, not just websites
+- **Agency:** Simple Inc (simpleinc.in) — full-service web development agency
+- **Positioning:** Development agency building production-grade web systems for startups and growing businesses
 - **Target clients:** Mumbai SMBs, startups needing custom web apps, e-commerce businesses, agencies needing white-label dev
-- **Differentiator:** Builds the same stack used by funded startups — React/Next.js, NestJS, headless CMS — at freelancer prices
-- **Price range:** ₹25,000–₹3,00,000 per project depending on scope
+- **Differentiator:** Builds the same stack used by funded startups — React/Next.js, NestJS, headless CMS — with direct communication and fast turnaround
+- **Price range:** ₹25,000–₹5,00,000 per project depending on scope
 - **Tone:** Professional but direct. No jargon. No corporate fluff. Results-focused.
 
 ---
@@ -32,14 +32,14 @@ This is not a template job. You are coding a real agency website from scratch. E
 
 - **Framework:** Next.js 14 (App Router) — required for SEO, SSG, and Core Web Vitals
 - **Styling:** Tailwind CSS
-- **Animations:** Framer Motion (subtle, purposeful only)
+- **Animations:** Framer Motion — moderate animations with page transitions, section reveals, and card hovers
 - **CMS:** None required — content is hardcoded, managed via code
-- **Contact form:** Formspree or Resend API (no backend needed)
+- **Contact form:** Formspree (via NEXT_PUBLIC_FORMSPREE_ENDPOINT)
 - **Deployment:** Vercel (free tier, excellent for Next.js)
 - **Analytics:** Google Analytics 4 + Google Search Console
 - **Schema:** JSON-LD structured data on every page
 
-Do NOT use WordPress, Webflow, Wix, or any template platform. The site itself must be proof of the work you sell.
+Do NOT use WordPress, Webflow, Wix, or any template platform. The site itself must be proof of the work we sell.
 
 ---
 
@@ -47,60 +47,61 @@ Do NOT use WordPress, Webflow, Wix, or any template platform. The site itself mu
 
 ```
 simpleinc.in/
-├── /                          → Home (primary landing page)
-├── /services/                 → Services overview
-├── /services/web-development  → Web development service page
-├── /services/shopify          → Shopify development service page
-├── /services/wordpress        → WordPress development service page
-├── /services/saas-development → SaaS/web app development service page
-├── /work/                     → Portfolio / case studies
-├── /work/[slug]               → Individual case study
-├── /about/                    → About Darshan + Simple Inc
-├── /contact/                  → Contact page
-├── /blog/                     → Blog index (SEO content)
-├── /blog/[slug]               → Blog post
-└── /hire-me/                  → Dedicated "hire a freelance developer Mumbai" landing page
+├── /                                → Home (primary landing page)
+├── /services/                       → Services overview
+├── /services/web-app-development    → Custom web applications & SaaS
+├── /services/website-development    → Business websites & landing pages
+├── /services/ai-development         → AI integration & automation
+├── /services/cms-ecommerce          → WordPress, Shopify, headless CMS
+├── /work/                           → Portfolio / case studies
+├── /work/[slug]                     → Individual case study
+├── /about/                          → About Simple Inc + Darshan
+├── /contact/                        → Contact page
+├── /blog/                           → Blog index (SEO content)
+├── /blog/[slug]                     → Blog post
+└── /hire-us/                        → Dedicated "hire a web development agency" landing page
 ```
 
 ---
 
 ## Target Keywords (Primary + Secondary)
 
-### Tier 1 — High intent, Mumbai-local (target for homepage + hire-me page)
-- `freelance web developer Mumbai`
-- `web developer for hire Mumbai`
-- `full stack developer Mumbai freelance`
-- `hire web developer Mumbai`
+### Tier 1 — High intent, Mumbai-local (target for homepage + hire-us page)
+- `web development agency Mumbai`
 - `web development company Mumbai`
+- `custom web application development Mumbai`
+- `software development company Mumbai`
+- `hire web developers Mumbai`
 
 ### Tier 2 — Service-specific (target for service pages)
-- `Shopify developer Mumbai`
-- `WordPress developer Mumbai`
-- `React developer freelance India`
-- `NestJS developer India`
-- `custom web app development Mumbai`
-- `headless CMS development India`
+- `custom web app development India`
 - `SaaS development company Mumbai`
-- `Next.js developer India`
+- `React development agency India`
+- `Next.js development company`
+- `AI integration services India`
+- `WordPress development agency Mumbai`
+- `Shopify development company Mumbai`
+- `headless CMS development India`
+- `NestJS development company`
 
 ### Tier 3 — Long-tail blog targets (1 post per keyword)
-- `how much does a website cost in Mumbai`
-- `WordPress vs Shopify for Indian businesses`
-- `headless CMS vs WordPress India`
-- `how to hire a web developer in Mumbai`
+- `how much does a web app cost in India`
+- `custom web application vs off-the-shelf software`
+- `how to hire a web development agency in India`
+- `headless CMS vs traditional CMS India`
 - `best tech stack for startups India 2025`
-- `Shopify store setup cost India`
-- `React vs Vue for web development`
-- `how long does it take to build a website in India`
+- `React vs Vue for enterprise applications`
+- `how long does it take to build a web app`
+- `AI integration cost for business India`
 
 ### LSI / supporting terms (use naturally in copy)
-- freelance full-stack developer
-- custom website development
-- e-commerce development India
+- custom software development
+- full-stack development agency
+- enterprise web development
 - responsive web design Mumbai
-- affordable web development Mumbai
-- white-label web development
-- Mumbai startup developer
+- scalable web applications
+- white-label development
+- Mumbai tech company
 
 ---
 
@@ -108,84 +109,157 @@ simpleinc.in/
 
 ### / (Homepage)
 
-**Title tag:** `Freelance Web Developer in Mumbai | Full-Stack & Shopify | Simple Inc`  
-**Meta description:** `Hire Darshan Parmar — senior full-stack developer in Mumbai. React, Next.js, Shopify, WordPress & SaaS development. Fast delivery. Direct communication. No agency overhead.`  
-**H1:** `Full-Stack Web Developer in Mumbai`  
+**Title tag:** `Web Development Agency Mumbai | Custom Apps & Websites | Simple Inc`
+**Meta description:** `Simple Inc is a web development agency in Mumbai building custom web applications, business websites, and AI-powered solutions. Fast delivery. Direct communication.`
+**H1:** `We Build Web Applications That Drive Business Growth`
 **H2s:**
-- What I Build
-- Services
-- Recent Work
+- What We Build
+- Our Services
+- Featured Work
 - Why Simple Inc
 - What Clients Say
+- Our Process
 - Ready to Start?
 
-**Schema:** LocalBusiness + Person + WebSite  
-**CTA above fold:** "Get a Free Quote" → /contact  
-**Secondary CTA:** "See My Work" → /work
+**Schema:** LocalBusiness + Organization + WebSite
+**CTA above fold:** "Start Your Project" → /contact
+**Secondary CTA:** "View Our Work" → /work
 
 ---
 
-### /hire-me (Dedicated landing page — most important for ranking)
+### /hire-us (Dedicated landing page)
 
-**Title tag:** `Hire a Freelance Web Developer in Mumbai | Simple Inc`  
-**Meta description:** `Looking to hire a freelance web developer in Mumbai? Simple Inc delivers production-ready React, Next.js, Shopify and WordPress projects. Fast, reliable, no middlemen.`  
-**H1:** `Hire a Freelance Web Developer in Mumbai`  
+**Title tag:** `Hire a Web Development Agency in Mumbai | Simple Inc`
+**Meta description:** `Looking to hire a web development agency in Mumbai? Simple Inc delivers production-ready web applications, websites, and AI solutions. Direct communication, no middlemen.`
+**H1:** `Hire a Web Development Agency in Mumbai`
 **Content structure:**
-1. Who you are and what you offer (150 words)
-2. What types of projects you take (with ₹ ranges)
-3. Your process (4 steps)
-4. FAQs (8–10 Q&As — critical for Google's People Also Ask)
+1. Who we are and what we offer (150 words)
+2. What types of projects we take (with ₹ ranges)
+3. Our process (4 steps)
+4. FAQs (10 Q&As — critical for Google's People Also Ask)
 5. CTA form
 
-**Schema:** FAQPage + Person + LocalBusiness
+**Schema:** FAQPage + Organization + LocalBusiness
 
 ---
 
-### /services/web-development
+### /services/ (Services Overview)
 
-**Title tag:** `Custom Web Development Services in Mumbai | Simple Inc`  
-**Meta description:** `Professional web development in Mumbai using React, Next.js & Node.js. Custom-built, mobile-first, SEO-ready websites for startups and growing businesses.`  
-**H1:** `Web Development Services in Mumbai`
-
----
-
-### /services/shopify
-
-**Title tag:** `Shopify Developer in Mumbai | Store Setup & Custom Themes | Simple Inc`  
-**Meta description:** `Shopify development in Mumbai — custom themes, Liquid templates, app integrations and store optimisation. Launch your store fast with an expert Shopify developer.`  
-**H1:** `Shopify Development in Mumbai`
+**Title tag:** `Web Development Services | Custom Apps, Websites & AI | Simple Inc`
+**Meta description:** `Explore our web development services: custom web applications, business websites, AI integration, and CMS/e-commerce solutions. Built in Mumbai, delivered worldwide.`
+**H1:** `Our Services`
 
 ---
 
-### /services/wordpress
+### /services/web-app-development
 
-**Title tag:** `WordPress Developer in Mumbai | Custom Themes & WooCommerce | Simple Inc`  
-**Meta description:** `Custom WordPress development in Mumbai. ACF, custom post types, WooCommerce, REST API, page builders and headless WordPress for modern businesses.`  
-**H1:** `WordPress Development in Mumbai`
+**Title tag:** `Custom Web App Development in Mumbai | SaaS & Dashboards | Simple Inc`
+**Meta description:** `Custom web application development in Mumbai. We build SaaS products, admin dashboards, and internal tools using React, Next.js, NestJS, and PostgreSQL.`
+**H1:** `Web Application Development`
 
 ---
 
-### /services/saas-development
+### /services/website-development
 
-**Title tag:** `SaaS & Web App Development in Mumbai | React + NestJS | Simple Inc`  
-**Meta description:** `Build your SaaS product with an experienced developer in Mumbai. Multi-tenant architecture, NestJS APIs, React dashboards and Prisma/PostgreSQL backends.`  
-**H1:** `SaaS & Web Application Development`
+**Title tag:** `Website Development in Mumbai | Business Sites & Landing Pages | Simple Inc`
+**Meta description:** `Professional website development in Mumbai. Fast, SEO-optimised business websites and landing pages built with Next.js for maximum performance and conversions.`
+**H1:** `Website Development`
+
+---
+
+### /services/ai-development
+
+**Title tag:** `AI Integration & Development Services Mumbai | Simple Inc`
+**Meta description:** `AI integration and development services in Mumbai. We build AI-powered chatbots, automation tools, and intelligent features using OpenAI, Claude, and custom models.`
+**H1:** `AI Development & Integration`
+
+---
+
+### /services/cms-ecommerce
+
+**Title tag:** `CMS & E-commerce Development Mumbai | WordPress, Shopify | Simple Inc`
+**Meta description:** `CMS and e-commerce development in Mumbai. WordPress, Shopify, WooCommerce, and headless CMS solutions. Custom themes and seamless integrations.`
+**H1:** `CMS & E-commerce Development`
 
 ---
 
 ### /about
 
-**Title tag:** `About Darshan Parmar — Full-Stack Developer, Mumbai | Simple Inc`  
-**Meta description:** `Darshan Parmar is a full-stack developer based in Mumbai with 4+ years building React, Node.js, Shopify and WordPress projects for clients across India.`  
+**Title tag:** `About Simple Inc | Web Development Agency Mumbai`
+**Meta description:** `Simple Inc is a web development agency founded by Darshan Parmar. Based in Mumbai, we build custom web applications and websites for startups and businesses.`
 **H1:** `About Simple Inc`
 
 ---
 
 ### /contact
 
-**Title tag:** `Contact Simple Inc | Hire a Web Developer in Mumbai`  
-**Meta description:** `Get in touch with Simple Inc for web development, Shopify, WordPress or custom app projects. Based in Mumbai. Fast response guaranteed.`  
+**Title tag:** `Contact Simple Inc | Web Development Agency Mumbai`
+**Meta description:** `Get in touch with Simple Inc for web development, custom applications, or AI solutions. Based in Mumbai. Fast response guaranteed.`
 **H1:** `Let's Work Together`
+
+---
+
+### /work
+
+**Title tag:** `Our Work | Web Development Portfolio | Simple Inc`
+**Meta description:** `View our portfolio of web applications, websites, and e-commerce projects. Case studies from Simple Inc, a web development agency in Mumbai.`
+**H1:** `Our Work`
+
+---
+
+### /blog
+
+**Title tag:** `Blog | Web Development Insights | Simple Inc`
+**Meta description:** `Web development insights, tutorials, and industry analysis from Simple Inc. Learn about React, Next.js, AI integration, and building successful web products.`
+**H1:** `Blog`
+
+---
+
+## Design System
+
+### Color Palette
+
+**Primary accent:** `sky-500` (#0ea5e9)
+**Neutral base:** Zinc scale (zinc-50 through zinc-950)
+**Background:** zinc-50 (light sections), white (cards)
+**Text primary:** zinc-900
+**Text secondary:** zinc-600
+**Borders:** zinc-200
+
+### Typography
+
+**Display font:** Playfair Display (serif) — used for H1s and key headlines
+**Body font:** Inter (sans-serif) — used for body text, navigation, and UI
+**Mono font:** JetBrains Mono — used for code and technical content
+
+Font loading: Self-hosted via `next/font` with CSS variable assignment.
+
+### Animation System
+
+**Library:** Framer Motion
+
+**Page transitions:**
+```typescript
+pageTransition: {
+  initial: { opacity: 0, y: 8 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  exit: { opacity: 0, y: -8, transition: { duration: 0.2 } },
+}
+```
+
+**Section reveals:**
+```typescript
+fadeInUp: {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+}
+```
+
+**Stagger containers:** Children stagger at 0.1s intervals
+
+**Card hovers:** y: -4 on hover with 0.2s transition
+
+**Animation philosophy:** Moderate, purposeful animations that enhance UX without being distracting. Every animation should have a reason.
 
 ---
 
@@ -200,8 +274,7 @@ simpleinc.in/
   "url": "https://www.simpleinc.in",
   "logo": "https://www.simpleinc.in/logo.png",
   "image": "https://www.simpleinc.in/og-image.jpg",
-  "description": "Full-stack web development agency in Mumbai offering React, Next.js, Shopify, WordPress and SaaS development services.",
-  "telephone": "+91-XXXXXXXXXX",
+  "description": "Web development agency in Mumbai building custom web applications, SaaS products, dashboards, business websites, and AI-powered solutions.",
   "email": "darshan@simpleinc.in",
   "address": {
     "@type": "PostalAddress",
@@ -223,13 +296,34 @@ simpleinc.in/
 }
 ```
 
+### Organization (homepage + about)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Simple Inc",
+  "url": "https://www.simpleinc.in",
+  "logo": "https://www.simpleinc.in/logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Darshan Parmar"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mumbai",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  }
+}
+```
+
 ### Person (about page)
 ```json
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Darshan Parmar",
-  "jobTitle": "Full-Stack Web Developer",
+  "jobTitle": "Founder & Lead Developer",
   "worksFor": {
     "@type": "Organization",
     "name": "Simple Inc",
@@ -242,11 +336,11 @@ simpleinc.in/
     "addressRegion": "Maharashtra",
     "addressCountry": "IN"
   },
-  "knowsAbout": ["React", "Next.js", "Node.js", "NestJS", "Shopify", "WordPress", "SaaS Development", "PostgreSQL"]
+  "knowsAbout": ["React", "Next.js", "Node.js", "NestJS", "WordPress", "Shopify", "SaaS Development", "PostgreSQL", "AI Integration"]
 }
 ```
 
-### FAQPage (/hire-me)
+### FAQPage (/hire-us)
 ```json
 {
   "@context": "https://schema.org",
@@ -254,18 +348,18 @@ simpleinc.in/
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does a website cost in Mumbai?",
+      "name": "How much does a web application cost in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A basic business website starts at ₹25,000–₹50,000. A custom web application or e-commerce store typically ranges from ₹75,000–₹3,00,000 depending on features, integrations, and timeline."
+        "text": "A basic web application starts at ₹1,50,000–₹3,00,000. A full-featured SaaS product or enterprise application typically ranges from ₹3,00,000–₹10,00,000+ depending on features, integrations, and timeline."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does it take to build a website?",
+      "name": "How long does it take to build a web application?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A standard business website takes 2–4 weeks. A Shopify or WooCommerce store takes 3–6 weeks. A custom SaaS or web application takes 6–16 weeks depending on scope."
+        "text": "A basic business website takes 2–4 weeks. A custom web application takes 6–12 weeks. A full SaaS product with authentication, payments, and dashboards takes 12–20 weeks depending on scope."
       }
     },
     {
@@ -273,7 +367,7 @@ simpleinc.in/
       "name": "Do you work with clients outside Mumbai?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Most projects are handled fully remotely. Clients across India, the UAE and the UK have worked with Simple Inc without in-person meetings."
+        "text": "Yes. Most projects are handled fully remotely. Clients across India, the UAE, UK, and USA have worked with Simple Inc without in-person meetings."
       }
     },
     {
@@ -281,7 +375,7 @@ simpleinc.in/
       "name": "What technologies do you use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The primary stack is React, Next.js, Node.js, NestJS, PostgreSQL, and Prisma for custom applications. For content sites, WordPress with ACF and REST API. For e-commerce, Shopify with custom Liquid themes."
+        "text": "Our primary stack is React, Next.js, Node.js, NestJS, PostgreSQL, and Prisma for custom applications. For content sites, WordPress with ACF. For e-commerce, Shopify or WooCommerce. For AI, OpenAI and Claude APIs."
       }
     },
     {
@@ -289,12 +383,12 @@ simpleinc.in/
       "name": "Do you offer ongoing maintenance?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Monthly maintenance retainers start at ₹5,000/month covering updates, backups, performance monitoring, and minor changes."
+        "text": "Yes. Monthly maintenance retainers start at ₹10,000/month covering updates, backups, performance monitoring, and minor changes."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you work with my existing team or agency?",
+      "name": "Can you work with our existing team or agency?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. White-label development for agencies is available. You handle the client, Simple Inc handles the build."
@@ -303,6 +397,12 @@ simpleinc.in/
   ]
 }
 ```
+
+### Article (blog posts + case studies)
+Used via `createArticleSchema()` function with headline, description, dates, author, and publisher.
+
+### BreadcrumbList (blog posts + case studies)
+Used via `createBreadcrumbSchema()` function for navigation hierarchy.
 
 ---
 
@@ -355,10 +455,10 @@ Every page must pass Google's Core Web Vitals thresholds:
 - **Sentence length:** Mostly under 20 words. Never over 30.
 - **Paragraph length:** 2–4 sentences max.
 - **Keyword density:** 1–2% for primary keyword. Use LSI terms naturally. Never stuff.
-- **Copy voice:** Confident, direct, specific. Never vague ("I build amazing websites"). Always specific ("I build Shopify stores that load under 2 seconds and handle 10,000 monthly orders").
+- **Copy voice:** Confident, direct, specific. Use "we" voice (agency perspective). Never vague ("We build amazing websites"). Always specific ("We build web applications that handle 50,000 daily users and integrate with 10+ third-party APIs").
 - **Numbers:** Use real numbers wherever possible. Project counts, client count, years, turnaround time, prices.
 - **Social proof:** Testimonial quotes must be attributed (name + company type minimum). Never anonymous.
-- **CTAs:** Every page has one primary CTA above the fold and one at the bottom. Use action verbs: "Get a Quote", "Start Your Project", "Book a Call".
+- **CTAs:** Every page has one primary CTA above the fold and one at the bottom. Use action verbs: "Start Your Project", "Get a Quote", "Book a Call".
 
 ---
 
@@ -368,16 +468,18 @@ Every page must pass Google's Core Web Vitals thresholds:
 /
 ├── app/
 │   ├── layout.tsx              → Root layout with metadata, fonts, GA4
+│   ├── template.tsx            → Page transition wrapper
 │   ├── page.tsx                → Homepage
+│   ├── not-found.tsx           → Custom 404 page
 │   ├── about/page.tsx
 │   ├── contact/page.tsx
-│   ├── hire-me/page.tsx
+│   ├── hire-us/page.tsx
 │   ├── services/
 │   │   ├── page.tsx
-│   │   ├── web-development/page.tsx
-│   │   ├── shopify/page.tsx
-│   │   ├── wordpress/page.tsx
-│   │   └── saas-development/page.tsx
+│   │   ├── web-app-development/page.tsx
+│   │   ├── website-development/page.tsx
+│   │   ├── ai-development/page.tsx
+│   │   └── cms-ecommerce/page.tsx
 │   ├── work/
 │   │   ├── page.tsx
 │   │   └── [slug]/page.tsx
@@ -387,34 +489,42 @@ Every page must pass Google's Core Web Vitals thresholds:
 ├── components/
 │   ├── layout/
 │   │   ├── Navbar.tsx
-│   │   └── Footer.tsx
+│   │   ├── Footer.tsx
+│   │   └── MotionProvider.tsx
 │   ├── sections/
 │   │   ├── Hero.tsx
 │   │   ├── Services.tsx
 │   │   ├── Work.tsx
+│   │   ├── WhyUs.tsx
 │   │   ├── Testimonials.tsx
 │   │   ├── Process.tsx
-│   │   └── CTA.tsx
+│   │   ├── CTA.tsx
+│   │   └── ServicePageTemplate.tsx
 │   ├── ui/
 │   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   └── Badge.tsx
+│   │   ├── Badge.tsx
+│   │   ├── StatCounter.tsx
+│   │   ├── Accordion.tsx
+│   │   ├── ContactForm.tsx
+│   │   └── SectionWrapper.tsx
 │   └── seo/
-│       ├── JsonLd.tsx          → Renders JSON-LD schema
-│       └── OpenGraph.tsx
+│       └── JsonLd.tsx          → Renders JSON-LD schema
 ├── content/
-│   ├── work/                   → MDX or JSON case studies
+│   ├── work/                   → JSON case studies
 │   └── blog/                   → MDX blog posts
 ├── lib/
 │   ├── metadata.ts             → Reusable metadata factory function
-│   └── schema.ts               → All JSON-LD schema objects
+│   ├── schema.ts               → All JSON-LD schema objects
+│   ├── animations.ts           → Framer Motion variants
+│   ├── blog.ts                 → Blog utilities (MDX parsing)
+│   └── work.ts                 → Work/portfolio utilities
 ├── public/
 │   ├── images/
 │   ├── og-image.jpg            → 1200x630 OG image
 │   └── logo.png
 ├── next.config.js
 ├── next-sitemap.config.js
-└── tailwind.config.js
+└── tailwind.config.ts
 ```
 
 ---
@@ -427,18 +537,20 @@ Use this pattern for every page. Never hardcode metadata — always use the fact
 // lib/metadata.ts
 import { Metadata } from 'next'
 
-const siteUrl = 'https://www.simpleinc.in'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.simpleinc.in'
 
 export function generateMeta({
   title,
   description,
   path = '',
   ogImage = '/og-image.jpg',
+  noIndex = false,
 }: {
   title: string
   description: string
   path?: string
   ogImage?: string
+  noIndex?: boolean
 }): Metadata {
   const url = `${siteUrl}${path}`
   return {
@@ -460,7 +572,9 @@ export function generateMeta({
       description,
       images: [`${siteUrl}${ogImage}`],
     },
-    robots: { index: true, follow: true },
+    robots: noIndex
+      ? { index: false, follow: false }
+      : { index: true, follow: true },
   }
 }
 ```
@@ -468,8 +582,8 @@ export function generateMeta({
 Usage in any page:
 ```typescript
 export const metadata = generateMeta({
-  title: 'Freelance Web Developer in Mumbai | Full-Stack & Shopify | Simple Inc',
-  description: 'Hire Darshan Parmar — senior full-stack developer in Mumbai. React, Next.js, Shopify, WordPress & SaaS development. Fast delivery. Direct communication.',
+  title: 'Web Development Agency Mumbai | Custom Apps & Websites | Simple Inc',
+  description: 'Simple Inc is a web development agency in Mumbai building custom web applications, business websites, and AI-powered solutions.',
   path: '/',
 })
 ```
@@ -482,12 +596,12 @@ Each post targets one long-tail keyword. Write 1,200–2,000 words. Include: int
 
 | Post | Target Keyword | Slug |
 |------|---------------|------|
-| 1 | how much does a website cost in Mumbai | `/blog/website-cost-mumbai` |
-| 2 | WordPress vs Shopify for Indian businesses | `/blog/wordpress-vs-shopify-india` |
-| 3 | how to hire a web developer in Mumbai | `/blog/hire-web-developer-mumbai` |
-| 4 | headless CMS vs WordPress India | `/blog/headless-cms-vs-wordpress-india` |
+| 1 | how much does a web app cost in India | `/blog/web-app-cost-india` |
+| 2 | custom web application vs off-the-shelf | `/blog/custom-vs-off-the-shelf` |
+| 3 | how to hire a web development agency India | `/blog/hire-web-development-agency` |
+| 4 | headless CMS vs traditional CMS | `/blog/headless-cms-vs-traditional` |
 | 5 | best tech stack for startups India | `/blog/best-tech-stack-startups-india` |
-| 6 | Shopify store setup cost India | `/blog/shopify-store-cost-india` |
+| 6 | AI integration for business India | `/blog/ai-integration-business-india` |
 
 Post 1 must go live on launch day. One post per month minimum after that.
 
@@ -540,9 +654,7 @@ Before going live, verify all of the following:
 ```env
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_SITE_URL=https://www.simpleinc.in
-FORMSPREE_ENDPOINT=https://formspree.io/f/XXXXXXXX
-# or
-RESEND_API_KEY=re_XXXXXXXXXX
+NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/XXXXXXXX
 CONTACT_EMAIL=darshan@simpleinc.in
 ```
 
@@ -550,8 +662,8 @@ CONTACT_EMAIL=darshan@simpleinc.in
 
 ## Deployment
 
-**Platform:** Vercel  
-**Build command:** `next build`  
+**Platform:** Vercel
+**Build command:** `next build`
 **Domain config:** Add simpleinc.in as custom domain in Vercel dashboard. Set DNS A record to Vercel's IP. Vercel handles SSL automatically.
 
 **next-sitemap config:**
@@ -581,8 +693,10 @@ module.exports = {
 | Next.js 14 App Router | SSG for SEO + RSC for performance. Best Core Web Vitals of any React framework. |
 | Vercel hosting | Zero-config Next.js, global CDN, automatic HTTPS, preview deployments |
 | No WordPress for own site | Selling dev work — the site itself must prove the skill |
-| /hire-me as dedicated page | "hire freelance web developer Mumbai" is a transactional keyword — it deserves a standalone page, not just a section |
+| /hire-us as dedicated page | "hire web development agency" is a transactional keyword — it deserves a standalone page |
 | JSON-LD on every page | Google uses structured data for rich results. LocalBusiness + FAQPage = featured snippets |
 | Blog from day one | Long-tail blog posts rank within 3–6 months. Each post is a client acquisition asset that runs forever |
 | Self-hosted fonts | Eliminates render-blocking third-party font requests. Improves LCP |
 | next-sitemap | Auto-generates sitemap including blog posts — zero manual work |
+| Framer Motion | Provides smooth page transitions and section animations without heavy bundle size |
+| Agency positioning | "We" voice positions Simple Inc as a professional agency, not a solo freelancer |
