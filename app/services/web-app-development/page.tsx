@@ -2,7 +2,7 @@ import { generateMeta } from '@/lib/metadata'
 import { ServicePageTemplate } from '@/components/sections/ServicePageTemplate'
 
 export const metadata = generateMeta({
-  title: 'SaaS & Web App Development in Mumbai | React + NestJS | Simple Inc',
+  title: 'SaaS & Web App Development in Mumbai | React + NestJS',
   description:
     'Build your SaaS product with an experienced developer in Mumbai. Multi-tenant architecture, NestJS APIs, React dashboards and Prisma/PostgreSQL backends.',
   path: '/services/web-app-development',

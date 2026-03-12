@@ -4,7 +4,7 @@ import { personSchema, organizationSchema } from '@/lib/schema'
 import { Button } from '@/components/ui/Button'
 
 export const metadata = generateMeta({
-  title: 'About Darshan Parmar — Full-Stack Developer, Mumbai | Simple Inc',
+  title: 'About Darshan Parmar — Full-Stack Developer, Mumbai',
   description: 'Darshan Parmar is a full-stack developer based in Mumbai with 5+ years building React, Next.js, Shopify, WordPress and SaaS projects for clients across India.',
   path: '/about',
 })

@@ -2,7 +2,7 @@ import { generateMeta } from '@/lib/metadata'
 import { ServicePageTemplate } from '@/components/sections/ServicePageTemplate'
 
 export const metadata = generateMeta({
-  title: 'AI-Powered Features & Integrations | Simple Inc Mumbai',
+  title: 'AI-Powered Features & Integrations in Mumbai',
   description:
     'Add AI capabilities to your products. Chatbots, content generation, intelligent search, and automation. OpenAI, Claude, and custom ML integrations by experienced developers.',
   path: '/services/ai-development',

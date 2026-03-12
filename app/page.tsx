@@ -10,7 +10,7 @@ import { Process } from '@/components/sections/Process'
 import { CTA } from '@/components/sections/CTA'
 
 export const metadata = generateMeta({
-  title: 'Web Application & SaaS Development Agency in Mumbai | Simple Inc',
+  title: 'Web Application & SaaS Development Agency in Mumbai',
   description:
     'Simple Inc is a Mumbai-based development agency building custom web applications, SaaS products, dashboards, and business websites. React, Next.js, NestJS, AI. Direct access to engineers.',
   path: '/',

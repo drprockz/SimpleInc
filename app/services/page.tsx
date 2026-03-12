@@ -3,7 +3,7 @@ import { Services } from '@/components/sections/Services'
 import { CTA } from '@/components/sections/CTA'
 
 export const metadata = generateMeta({
-  title: 'Web Development Services in Mumbai | Simple Inc',
+  title: 'Web Development Services in Mumbai',
   description:
     'Custom web application development, SaaS platforms, business websites, AI integration, and CMS solutions. Mumbai-based agency serving clients across India.',
   path: '/services',

@@ -2,7 +2,7 @@ import { generateMeta } from '@/lib/metadata'
 import { ServicePageTemplate } from '@/components/sections/ServicePageTemplate'
 
 export const metadata = generateMeta({
-  title: 'CMS & E-Commerce Development | WordPress, Shopify | Simple Inc Mumbai',
+  title: 'CMS & E-Commerce Development in Mumbai | WordPress, Shopify',
   description:
     'WordPress, Shopify, and WooCommerce development in Mumbai. Custom themes, e-commerce stores, content-managed sites that convert visitors into customers.',
   path: '/services/cms-ecommerce',

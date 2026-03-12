@@ -2,7 +2,7 @@ import { generateMeta } from '@/lib/metadata'
 import { ServicePageTemplate } from '@/components/sections/ServicePageTemplate'
 
 export const metadata = generateMeta({
-  title: 'Custom Web Development Services in Mumbai | Simple Inc',
+  title: 'Custom Web Development Services in Mumbai',
   description:
     'Professional web development in Mumbai using React, Next.js and Node.js. Custom-built, mobile-first, SEO-ready websites for startups and growing businesses.',
   path: '/services/website-development',

@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /thank-you
+
+# Host
+Host: https://www.simpleinc.in
+
+# Sitemaps
+Sitemap: https://www.simpleinc.in/sitemap.xml

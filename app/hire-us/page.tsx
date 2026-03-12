@@ -6,7 +6,7 @@ import { ContactForm } from '@/components/ui/ContactForm'
 import { Button } from '@/components/ui/Button'
 
 export const metadata = generateMeta({
-  title: 'Hire a Web Development Agency in Mumbai | Simple Inc',
+  title: 'Hire a Web Development Agency in Mumbai',
   description:
     'Hire Simple Inc for production-ready web applications, SaaS platforms, websites, and AI integrations. Mumbai-based. Direct access to engineers. Fixed pricing.',
   path: '/hire-us',

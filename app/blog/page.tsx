@@ -3,7 +3,7 @@ import { generateMeta } from '@/lib/metadata'
 import { getAllPosts } from '@/lib/blog'
 
 export const metadata = generateMeta({
-  title: 'Blog — Web Development Insights | Simple Inc',
+  title: 'Blog — Web Development Insights',
   description:
     'Articles on web development, SaaS building, AI integration, and running a development agency in India. By Darshan Parmar.',
   path: '/blog',

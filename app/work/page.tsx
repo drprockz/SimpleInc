@@ -4,7 +4,7 @@ import { getAllProjects } from '@/lib/work'
 import { Badge } from '@/components/ui/Badge'
 
 export const metadata = generateMeta({
-  title: 'Our Work — Case Studies | Simple Inc',
+  title: 'Our Work — Case Studies',
   description:
     'Explore case studies from Simple Inc: custom web applications, SaaS platforms, e-commerce stores, and AI integrations built for businesses across India.',
   path: '/work',

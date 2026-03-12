@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!post) return {}
 
   return generateMeta({
-    title: `${post.title} | Simple Inc`,
+    title: post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
   })

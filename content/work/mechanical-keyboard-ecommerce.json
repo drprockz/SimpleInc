@@ -8,6 +8,6 @@
   "problem": "The client had 20 product photos and no bandwidth to create social content daily. The store was live but getting no organic traffic from social media. Creating individual posts, captions, and scheduling them manually was taking hours every week.",
   "solution": "We built a custom Shopify theme optimised for mobile performance and conversion, plus a Node.js automation pipeline. The pipeline uses Stable Diffusion to generate lifestyle product image variants and Claude API to write platform-specific captions, then auto-posts via Meta Graph API on a schedule.",
   "result": "560 unique post combinations generated from 20 original photos. 3 months of scheduled content ready on day one. The client now spends zero time on social media content creation while maintaining a consistent posting schedule.",
-  "metaTitle": "Shopify + Social Media Automation Case Study | Simple Inc Mumbai",
+  "metaTitle": "Shopify + Social Media Automation Case Study | E-Commerce",
   "metaDescription": "How Simple Inc built a Shopify store and automated social media content pipeline for a Mumbai keyboard retailer using Node.js and Meta Graph API."
 }
