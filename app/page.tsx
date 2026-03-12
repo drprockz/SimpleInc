@@ -1,15 +1,32 @@
-export default function Home() {
+import { generateMeta } from '@/lib/metadata'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { localBusinessSchema } from '@/lib/schema'
+import { Hero } from '@/components/sections/Hero'
+import { Services } from '@/components/sections/Services'
+import { Work } from '@/components/sections/Work'
+import { WhyUs } from '@/components/sections/WhyUs'
+import { Testimonials } from '@/components/sections/Testimonials'
+import { Process } from '@/components/sections/Process'
+import { CTA } from '@/components/sections/CTA'
+
+export const metadata = generateMeta({
+  title: 'Web Application & SaaS Development Agency in Mumbai | Simple Inc',
+  description:
+    'Simple Inc is a Mumbai-based development agency building custom web applications, SaaS products, dashboards, and business websites. React, Next.js, NestJS, AI. Direct access to engineers.',
+  path: '/',
+})
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold text-center">
-        Simple Inc
-      </h1>
-      <p className="mt-4 text-lg text-gray-600 text-center">
-        Full-Stack Web Development Agency in Mumbai
-      </p>
-      <p className="mt-2 text-sm text-gray-400">
-        Site under construction
-      </p>
-    </main>
+    <>
+      <JsonLd data={localBusinessSchema} />
+      <Hero />
+      <Services />
+      <Work />
+      <WhyUs />
+      <Testimonials />
+      <Process />
+      <CTA />
+    </>
   )
 }
