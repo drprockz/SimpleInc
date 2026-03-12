@@ -510,7 +510,7 @@ export default function RootLayout({
 }
 ```
 
-- [ ] **Step 2: Create ReducedMotion provider — `components/layout/MotionProvider.tsx`**
+- [ ] **Step 2: Create ReducedMotion provider**
 
 Wraps the app in Framer Motion's `MotionConfig` to respect `prefers-reduced-motion` at the JS animation level (the CSS media query in globals.css only handles CSS animations, not Framer Motion).
 
@@ -2046,9 +2046,14 @@ This is the most important SEO landing page. Structure from spec:
 "Whether you need a business website, a Shopify store, a custom dashboard, or a full SaaS product, we handle everything in-house: frontend, backend, database, DevOps, and AI. One team. One point of contact. Fixed pricing with no surprises."
 
 3. Pricing table (4 rows — responsive: stacked cards on mobile, table on desktop)
-3. "How Hiring Works" — 5 animated steps (reuse Process component pattern)
-4. FAQ — 10 Q&As using Accordion component + FAQPage JSON-LD
-5. Embedded ContactForm component
+4. "How Hiring Works" — 5 animated steps:
+   1. Send us your brief → via the form below or darshan@simpleinc.in
+   2. Discovery call (30 min) → scope, timeline, budget alignment
+   3. Proposal sent within 48 hours → fixed price, clear scope, no surprises
+   4. Development begins → weekly updates, WhatsApp/Slack access
+   5. Launch + handover → deployment, training, 30-day support
+5. FAQ — 10 Q&As using Accordion component + FAQPage JSON-LD
+6. Embedded ContactForm component
 
 Metadata and JSON-LD (FAQPage + LocalBusiness) from spec.
 
