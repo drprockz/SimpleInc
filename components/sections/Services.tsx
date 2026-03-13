@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { SectionWrapper, AnimatedChild } from '@/components/ui/SectionWrapper'
-import { cardHover } from '@/lib/animations'
+import { GradientOrbs } from '@/components/effects/GradientOrbs'
+import { TiltCard } from '@/components/interactive/TiltCard'
 
 const services = [
   {
@@ -38,8 +38,9 @@ const services = [
 
 export function Services() {
   return (
-    <SectionWrapper className="py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionWrapper className="py-20 bg-[#111111] bg-dot-grid relative">
+      <GradientOrbs variant="services" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedChild>
           <h2 className="text-center mb-12">What We Build</h2>
         </AnimatedChild>
@@ -47,25 +48,25 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <AnimatedChild key={service.href}>
-              <motion.div whileHover={cardHover}>
+              <TiltCard className="rounded-lg">
                 <Link
                   href={service.href}
-                  className="block bg-white border border-slate-200 rounded-lg p-6 h-full hover:border-l-4 hover:border-l-sky-500 hover:shadow-lg transition-all duration-200"
+                  className="block bg-[#1a1a1a] border border-[#262626] rounded-lg p-6 h-full transition-all duration-200"
                 >
-                  <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center text-xl mb-4">
+                  <div className="w-10 h-10 bg-sky-500/10 rounded-lg flex items-center justify-center text-xl mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  <h3 className="text-lg font-bold text-[#f5f5f5] mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-[#a3a3a3] leading-relaxed">
                     {service.description}
                   </p>
                   <span className="inline-block mt-4 text-sky-500 text-sm font-medium">
                     Learn more →
                   </span>
                 </Link>
-              </motion.div>
+              </TiltCard>
             </AnimatedChild>
           ))}
         </div>
