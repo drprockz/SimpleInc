@@ -2,6 +2,7 @@ import { generateMeta } from '@/lib/metadata'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { personSchema, organizationSchema } from '@/lib/schema'
 import { Button } from '@/components/ui/Button'
+import { SectionTransition } from '@/components/effects/SectionTransition'
 
 export const metadata = generateMeta({
   title: 'About Darshan Parmar — Full-Stack Developer, Mumbai',
@@ -46,12 +47,12 @@ export default function AboutPage() {
       <JsonLd data={personSchema} />
       <JsonLd data={organizationSchema} />
 
-      <section className="pt-32 md:pt-40 pb-20">
+      <section className="pt-32 md:pt-40 pb-20 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8">About Simple Inc</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-8">About Simple Inc</h1>
 
           {/* Intro */}
-          <div className="space-y-4 text-lg text-slate-600 leading-relaxed mb-16">
+          <div className="space-y-4 text-lg text-[#a3a3a3] leading-relaxed mb-16">
             <p>
               Simple Inc is a web development agency based in Mumbai, founded by Darshan Parmar. We specialise in building custom web applications, SaaS products, business websites, and AI-powered features for startups and growing businesses across India.
             </p>
@@ -61,34 +62,34 @@ export default function AboutPage() {
           </div>
 
           {/* Tech Stack */}
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Our Stack</h2>
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-8">Our Stack</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {techStack.map((tech) => (
-              <div key={tech.category} className="bg-slate-50 rounded-lg p-6">
-                <h3 className="font-semibold text-slate-900 mb-2">{tech.category}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">{tech.items}</p>
+              <div key={tech.category} className="bg-[#111111] rounded-lg p-6">
+                <h3 className="font-semibold text-[#f5f5f5] mb-2">{tech.category}</h3>
+                <p className="text-sm text-[#a3a3a3] leading-relaxed">{tech.items}</p>
               </div>
             ))}
           </div>
 
           {/* What We Build */}
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">What We Build</h2>
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-8">What We Build</h2>
           <ul className="space-y-4 mb-16">
             {capabilities.map((cap, i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="text-sky-500 font-bold mt-0.5 flex-shrink-0">✓</span>
-                <span className="text-slate-600 leading-relaxed">{cap}</span>
+                <span className="text-[#a3a3a3] leading-relaxed">{cap}</span>
               </li>
             ))}
           </ul>
 
           {/* How We Work */}
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">How We Work</h2>
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-8">How We Work</h2>
           <div className="space-y-8 mb-16">
             {workStyle.map((item, i) => (
               <div key={i}>
-                <h3 className="font-semibold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                <h3 className="font-semibold text-[#f5f5f5] mb-2">{item.title}</h3>
+                <p className="text-[#a3a3a3] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

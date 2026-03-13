@@ -4,6 +4,7 @@ import { localBusinessSchema, createFaqSchema } from '@/lib/schema'
 import { Accordion } from '@/components/ui/Accordion'
 import { ContactForm } from '@/components/ui/ContactForm'
 import { Button } from '@/components/ui/Button'
+import { SectionTransition } from '@/components/effects/SectionTransition'
 
 export const metadata = generateMeta({
   title: 'Hire a Web Development Agency in Mumbai',
@@ -107,14 +108,14 @@ export default function HireUsPage() {
       <JsonLd data={createFaqSchema(faqs)} />
 
       {/* Hero Section */}
-      <section className="pt-32 md:pt-40 pb-16">
+      <section className="pt-32 md:pt-40 pb-16 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-8">
             Hire a Web Development Agency in Mumbai
           </h1>
 
           {/* Intro Copy */}
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+          <div className="space-y-6 text-lg text-[#a3a3a3] leading-relaxed">
             <p>
               When you hire Simple Inc, you get direct access to the engineers building your product.
               No account managers. No hand-offs between teams. No waiting days for a status update.
@@ -141,52 +142,56 @@ export default function HireUsPage() {
         </div>
       </section>
 
+      <SectionTransition from="#0a0a0a" to="#111111" />
+
       {/* Pricing Table */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#111111]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Pricing</h2>
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-8">Pricing</h2>
+          <div className="bg-[#1a1a1a] rounded-xl shadow-sm overflow-hidden border border-[#262626]">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-slate-200 bg-slate-50">
-                  <th className="text-left py-4 px-6 font-semibold text-slate-900">Service</th>
-                  <th className="text-left py-4 px-6 font-semibold text-slate-900">Starting Price</th>
-                  <th className="text-left py-4 px-6 font-semibold text-slate-900">Timeline</th>
+                <tr className="border-b border-[#262626] bg-[#111111]">
+                  <th className="text-left py-4 px-6 font-semibold text-[#f5f5f5]">Service</th>
+                  <th className="text-left py-4 px-6 font-semibold text-[#f5f5f5]">Starting Price</th>
+                  <th className="text-left py-4 px-6 font-semibold text-[#f5f5f5]">Timeline</th>
                 </tr>
               </thead>
               <tbody>
                 {pricingTable.map((row, index) => (
                   <tr
                     key={row.service}
-                    className={index !== pricingTable.length - 1 ? 'border-b border-slate-100' : ''}
+                    className={index !== pricingTable.length - 1 ? 'border-b border-[#1a1a1a]' : ''}
                   >
-                    <td className="py-4 px-6 text-slate-900 font-medium">{row.service}</td>
-                    <td className="py-4 px-6 text-sky-600 font-semibold">{row.price}</td>
-                    <td className="py-4 px-6 text-slate-600">{row.timeline}</td>
+                    <td className="py-4 px-6 text-[#f5f5f5] font-medium">{row.service}</td>
+                    <td className="py-4 px-6 text-sky-400 font-semibold">{row.price}</td>
+                    <td className="py-4 px-6 text-[#a3a3a3]">{row.timeline}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-slate-500 mt-4">
+          <p className="text-sm text-[#525252] mt-4">
             Prices are indicative. Final quote depends on scope, features, and integrations required.
           </p>
         </div>
       </section>
 
+      <SectionTransition from="#111111" to="#0a0a0a" />
+
       {/* How Hiring Works */}
-      <section className="py-16">
+      <section className="py-16 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 mb-10">How Hiring Works</h2>
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-10">How Hiring Works</h2>
           <div className="space-y-6">
             {hiringSteps.map((item) => (
               <div key={item.step} className="flex gap-5">
-                <div className="w-10 h-10 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                <div className="w-10 h-10 bg-sky-500/10 text-sky-400 rounded-full flex items-center justify-center font-bold flex-shrink-0">
                   {item.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-slate-900 mb-1">{item.title}</h3>
-                  <p className="text-slate-600">{item.description}</p>
+                  <h3 className="font-semibold text-[#f5f5f5] mb-1">{item.title}</h3>
+                  <p className="text-[#a3a3a3]">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -194,29 +199,33 @@ export default function HireUsPage() {
         </div>
       </section>
 
+      <SectionTransition from="#0a0a0a" to="#111111" />
+
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#111111]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
-          <div className="bg-white rounded-xl p-6 md:p-8">
+          <h2 className="text-3xl font-bold text-[#f5f5f5] mb-8">Frequently Asked Questions</h2>
+          <div className="bg-[#1a1a1a] rounded-xl p-6 md:p-8">
             <Accordion items={faqs} />
           </div>
         </div>
       </section>
 
+      <SectionTransition from="#111111" to="#0a0a0a" />
+
       {/* Contact Form Section */}
-      <section id="contact-form" className="py-16">
+      <section id="contact-form" className="py-16 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Start Your Project</h2>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <h2 className="text-3xl font-bold text-[#f5f5f5] mb-6">Start Your Project</h2>
+              <p className="text-[#a3a3a3] mb-6 leading-relaxed">
                 Tell us what you want to build. Include your timeline and budget range if you have
                 them. We will get back to you within 24 hours with next steps.
               </p>
               <div className="space-y-4">
                 <p>
-                  <span className="text-slate-500">Email:</span>{' '}
+                  <span className="text-[#525252]">Email:</span>{' '}
                   <a
                     href="mailto:darshan@simpleinc.in"
                     className="text-sky-500 hover:text-sky-600 font-medium"
@@ -224,8 +233,8 @@ export default function HireUsPage() {
                     darshan@simpleinc.in
                   </a>
                 </p>
-                <p className="text-slate-600">Mumbai, Maharashtra, India</p>
-                <p className="text-sm font-medium text-sky-600 bg-sky-50 inline-block px-3 py-1 rounded-full">
+                <p className="text-[#a3a3a3]">Mumbai, Maharashtra, India</p>
+                <p className="text-sm font-medium text-sky-400 bg-sky-500/10 inline-block px-3 py-1 rounded-full">
                   Currently accepting new projects
                 </p>
               </div>
