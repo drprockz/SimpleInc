@@ -12,14 +12,14 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <div className="divide-y divide-slate-200">
+    <div className="divide-y divide-[#262626]">
       {items.map((item, index) => (
-        <div key={index}>
+        <div key={index} className="bg-[#1a1a1a]">
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full flex items-center justify-between py-5 text-left"
           >
-            <span className="text-base md:text-lg font-semibold text-slate-900 pr-4">
+            <span className="text-base md:text-lg font-semibold text-[#f5f5f5] pr-4">
               {item.question}
             </span>
             <span className="text-sky-500 text-xl flex-shrink-0">
@@ -35,7 +35,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <p className="pb-5 text-slate-600 leading-relaxed">
+                <p className="pb-5 text-[#a3a3a3] leading-relaxed">
                   {item.answer}
                 </p>
               </motion.div>
