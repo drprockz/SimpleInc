@@ -6,6 +6,9 @@ import { websiteSchema } from '@/lib/schema'
 import { MotionProvider } from '@/components/layout/MotionProvider'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { LoadingScreen } from '@/components/effects/LoadingScreen'
+import { CursorSpotlight } from '@/components/effects/CursorSpotlight'
+import { ScrollProgress } from '@/components/effects/ScrollProgress'
 import './globals.css'
 
 const inter = Inter({
@@ -62,8 +65,11 @@ export default function RootLayout({
       <head>
         <JsonLd data={websiteSchema} />
       </head>
-      <body className="font-sans text-slate-800 bg-white antialiased">
+      <body className="font-sans text-[#a3a3a3] bg-[#0a0a0a] antialiased">
         <MotionProvider>
+          <LoadingScreen />
+          <CursorSpotlight />
+          <ScrollProgress />
           <Navbar />
           {children}
           <Footer />
