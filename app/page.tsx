@@ -8,6 +8,7 @@ import { WhyUs } from '@/components/sections/WhyUs'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { Process } from '@/components/sections/Process'
 import { CTA } from '@/components/sections/CTA'
+import { SectionTransition } from '@/components/effects/SectionTransition'
 
 export const metadata = generateMeta({
   title: 'Web Application & SaaS Development Agency in Mumbai',
@@ -21,11 +22,17 @@ export default function HomePage() {
     <>
       <JsonLd data={localBusinessSchema} />
       <Hero />
+      <SectionTransition from="#0a0a0a" to="#111111" />
       <Services />
+      <SectionTransition from="#111111" to="#0a0a0a" />
       <Work />
+      <SectionTransition from="#0a0a0a" to="#111111" />
       <WhyUs />
+      <SectionTransition from="#111111" to="#0a0a0a" />
       <Testimonials />
+      <SectionTransition from="#0a0a0a" to="#111111" />
       <Process />
+      <SectionTransition from="#111111" to="#0a0a0a" />
       <CTA />
     </>
   )
