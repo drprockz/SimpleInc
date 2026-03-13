@@ -65,50 +65,50 @@ export default async function BlogPostPage({
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      <article className="pt-32 md:pt-40 pb-20">
+      <article className="pt-32 md:pt-40 pb-20 bg-[#0a0a0a]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm">
-            <Link href="/" className="text-slate-500 hover:text-slate-700">
+            <Link href="/" className="text-[#525252] hover:text-[#a3a3a3]">
               Home
             </Link>
-            <span className="mx-2 text-slate-400">/</span>
-            <Link href="/blog" className="text-slate-500 hover:text-slate-700">
+            <span className="mx-2 text-[#525252]">/</span>
+            <Link href="/blog" className="text-[#525252] hover:text-[#a3a3a3]">
               Blog
             </Link>
-            <span className="mx-2 text-slate-400">/</span>
-            <span className="text-slate-900">
+            <span className="mx-2 text-[#525252]">/</span>
+            <span className="text-[#f5f5f5]">
               {post.title.length > 30
                 ? `${post.title.substring(0, 30)}...`
                 : post.title}
             </span>
           </nav>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#f5f5f5] mb-4">
             {post.title}
           </h1>
           <div className="flex items-center gap-4 mb-12">
-            <time className="text-slate-500">
+            <time className="text-[#525252]">
               {new Date(post.date).toLocaleDateString('en-IN', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
               })}
             </time>
-            <span className="text-slate-300">|</span>
-            <span className="text-slate-500">By {post.author}</span>
+            <span className="text-[#525252]">|</span>
+            <span className="text-[#525252]">By {post.author}</span>
           </div>
 
           {/* Content */}
-          <div className="prose prose-slate prose-lg max-w-none mb-16">
+          <div className="prose prose-lg max-w-none mb-16">
             {sections.map((section, i) => (
               <ContentSection key={i} section={section} />
             ))}
           </div>
 
           {/* Author */}
-          <div className="bg-slate-50 rounded-lg p-6 mb-12">
-            <p className="text-sm text-slate-600">
+          <div className="bg-[#111111] rounded-lg p-6 mb-12">
+            <p className="text-sm text-[#a3a3a3]">
               Written by <strong>{post.author}</strong>, founder of Simple Inc,
               Mumbai. Building custom web applications, SaaS products, and
               AI-powered solutions for businesses across India.
@@ -118,7 +118,7 @@ export default async function BlogPostPage({
           {/* Related Posts */}
           {relatedPosts.length > 0 && (
             <div className="mb-12">
-              <h2 className="text-xl font-bold text-slate-900 mb-4">
+              <h2 className="text-xl font-bold text-[#f5f5f5] mb-4">
                 Related Articles
               </h2>
               <div className="space-y-4">
@@ -126,10 +126,10 @@ export default async function BlogPostPage({
                   <Link
                     key={related.slug}
                     href={`/blog/${related.slug}`}
-                    className="block p-4 border border-slate-200 rounded-lg hover:border-sky-500 transition-colors"
+                    className="block p-4 border border-[#262626] rounded-lg hover:border-sky-500 transition-colors"
                   >
-                    <h3 className="font-bold text-slate-900">{related.title}</h3>
-                    <p className="text-sm text-slate-600">
+                    <h3 className="font-bold text-[#f5f5f5]">{related.title}</h3>
+                    <p className="text-sm text-[#a3a3a3]">
                       {related.description}
                     </p>
                   </Link>
@@ -139,8 +139,8 @@ export default async function BlogPostPage({
           )}
 
           {/* CTA */}
-          <div className="text-center bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-8">
-            <p className="text-lg text-slate-700 mb-4">
+          <div className="text-center bg-gradient-to-br from-[#111111] to-[#1a1a1a] rounded-xl p-8">
+            <p className="text-lg text-[#a3a3a3] mb-4">
               Need help building your web application?
             </p>
             <Button href="/contact">Get in Touch</Button>
@@ -253,30 +253,30 @@ function ContentSection({ section }: { section: ContentSection }) {
     case 'heading':
       if (section.level === 2) {
         return (
-          <h2 className="text-2xl font-bold text-slate-900 mt-10 mb-4">
+          <h2 className="text-2xl font-bold text-[#f5f5f5] mt-10 mb-4">
             {section.content}
           </h2>
         )
       }
       if (section.level === 3) {
         return (
-          <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+          <h3 className="text-xl font-bold text-[#f5f5f5] mt-8 mb-3">
             {section.content}
           </h3>
         )
       }
-      return <h4 className="text-lg font-bold text-slate-900 mt-6 mb-2">{section.content}</h4>
+      return <h4 className="text-lg font-bold text-[#f5f5f5] mt-6 mb-2">{section.content}</h4>
 
     case 'paragraph':
       return (
-        <p className="text-slate-600 leading-relaxed mb-4">
+        <p className="text-[#a3a3a3] leading-relaxed mb-4">
           {formatInlineContent(section.content)}
         </p>
       )
 
     case 'list':
       return (
-        <ul className="list-disc list-inside space-y-2 mb-4 text-slate-600">
+        <ul className="list-disc list-inside space-y-2 mb-4 text-[#a3a3a3]">
           {section.items?.map((item, i) => (
             <li key={i}>{formatInlineContent(item)}</li>
           ))}
@@ -290,11 +290,11 @@ function ContentSection({ section }: { section: ContentSection }) {
         <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-slate-100">
+              <tr className="bg-[#1a1a1a]">
                 {header.map((cell, i) => (
                   <th
                     key={i}
-                    className="border border-slate-200 px-4 py-2 text-left font-semibold text-slate-900"
+                    className="border border-[#262626] px-4 py-2 text-left font-semibold text-[#f5f5f5]"
                   >
                     {cell}
                   </th>
@@ -303,11 +303,11 @@ function ContentSection({ section }: { section: ContentSection }) {
             </thead>
             <tbody>
               {body.map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                <tr key={i} className={i % 2 === 0 ? 'bg-[#0a0a0a]' : 'bg-[#111111]'}>
                   {row.map((cell, j) => (
                     <td
                       key={j}
-                      className="border border-slate-200 px-4 py-2 text-slate-600"
+                      className="border border-[#262626] px-4 py-2 text-[#a3a3a3]"
                     >
                       {cell}
                     </td>
@@ -330,7 +330,7 @@ function formatInlineContent(text: string): React.ReactNode {
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       return (
-        <strong key={i} className="font-semibold text-slate-900">
+        <strong key={i} className="font-semibold text-[#f5f5f5]">
           {part.slice(2, -2)}
         </strong>
       )
