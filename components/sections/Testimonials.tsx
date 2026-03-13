@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { SectionWrapper, AnimatedChild } from '@/components/ui/SectionWrapper'
+import { GradientOrbs } from '@/components/effects/GradientOrbs'
 import { slideInLeft } from '@/lib/animations'
 
 // IMPORTANT: Replace with real testimonials before launch. Do not ship placeholder quotes.
@@ -25,8 +26,9 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <SectionWrapper className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionWrapper className="py-20 bg-[#0a0a0a] bg-dot-grid relative">
+      <GradientOrbs variant="testimonials" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedChild>
           <h2 className="mb-12">What Clients Say</h2>
         </AnimatedChild>
@@ -39,14 +41,18 @@ export function Testimonials() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="border-l-4 border-sky-500 bg-slate-50 rounded-r-lg p-6"
+              className={
+                i % 2 === 0
+                  ? 'border-l-4 border-sky-500 bg-[#111111] rounded-r-lg p-6 border border-[#262626]'
+                  : 'border-l-4 border-indigo-500 bg-[#111111] rounded-r-lg p-6 border border-[#262626]'
+              }
             >
-              <p className="text-slate-700 leading-relaxed mb-4 italic">
+              <p className="text-[#a3a3a3] leading-relaxed mb-4 italic">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div>
-                <div className="font-semibold text-slate-900">{t.name}</div>
-                <div className="text-sm text-slate-500">{t.company}</div>
+                <div className="font-semibold text-[#f5f5f5]">{t.name}</div>
+                <div className="text-sm text-[#525252]">{t.company}</div>
               </div>
             </motion.div>
           ))}
