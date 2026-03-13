@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -52,15 +53,14 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm'
+          ? 'bg-[#0a0a0a]/80 backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-baseline">
-          <span className="text-xl font-black text-slate-900">Simple</span>
-          <span className="text-xl font-semibold text-sky-500">inc</span>
+          <Image src="/logo.png" alt="Simple Inc" width={120} height={36} className="brightness-0 invert" />
         </Link>
 
         {/* Desktop nav */}
@@ -72,7 +72,7 @@ export function Navbar() {
               className={`text-sm font-medium transition-colors ${
                 pathname.startsWith(link.href)
                   ? 'text-sky-500'
-                  : 'text-slate-600 hover:text-slate-900'
+                  : 'text-[#a3a3a3] hover:text-[#f5f5f5]'
               }`}
             >
               {link.label}
@@ -80,7 +80,7 @@ export function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
+            className="bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]"
           >
             Start a Project
           </Link>
@@ -94,15 +94,15 @@ export function Navbar() {
         >
           <motion.span
             animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-0.5 bg-slate-900"
+            className="block w-6 h-0.5 bg-white"
           />
           <motion.span
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="block w-6 h-0.5 bg-slate-900"
+            className="block w-6 h-0.5 bg-white"
           />
           <motion.span
             animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-0.5 bg-slate-900"
+            className="block w-6 h-0.5 bg-white"
           />
         </button>
       </nav>
@@ -114,7 +114,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-slate-200 overflow-hidden"
+            className="md:hidden bg-[#111111] border-t border-[#262626] overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-3">
               {navLinks.map((link, index) => (
@@ -125,7 +125,7 @@ export function Navbar() {
                   className={`text-base font-medium py-2 ${
                     pathname.startsWith(link.href)
                       ? 'text-sky-500'
-                      : 'text-slate-700'
+                      : 'text-[#a3a3a3]'
                   }`}
                 >
                   {link.label}
