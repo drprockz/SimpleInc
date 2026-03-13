@@ -58,29 +58,29 @@ export default async function CaseStudyPage({ params }: PageProps) {
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      <section className="pt-32 md:pt-40 pb-20">
+      <section className="pt-32 md:pt-40 pb-20 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="mb-8 text-sm">
-            <Link href="/" className="text-slate-500 hover:text-slate-700">
+            <Link href="/" className="text-[#525252] hover:text-[#a3a3a3]">
               Home
             </Link>
-            <span className="mx-2 text-slate-400">/</span>
-            <Link href="/work" className="text-slate-500 hover:text-slate-700">
+            <span className="mx-2 text-[#525252]">/</span>
+            <Link href="/work" className="text-[#525252] hover:text-[#a3a3a3]">
               Work
             </Link>
-            <span className="mx-2 text-slate-400">/</span>
-            <span className="text-slate-900">
+            <span className="mx-2 text-[#525252]">/</span>
+            <span className="text-[#f5f5f5]">
               {project.title.split(' — ')[0]}
             </span>
           </nav>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-6">
             {project.title}
           </h1>
 
           {/* Meta bar */}
-          <div className="flex flex-wrap items-center gap-4 mb-8 text-sm text-slate-600">
+          <div className="flex flex-wrap items-center gap-4 mb-8 text-sm text-[#a3a3a3]">
             <span>
               <strong>Client:</strong> {project.client}
             </span>
@@ -95,33 +95,33 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </div>
 
           {/* The Problem */}
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl font-bold text-[#f5f5f5] mb-4">
             The Problem
           </h2>
-          <p className="text-slate-600 leading-relaxed mb-12">
+          <p className="text-[#a3a3a3] leading-relaxed mb-12">
             {project.problem}
           </p>
 
           {/* The Solution */}
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl font-bold text-[#f5f5f5] mb-4">
             The Solution
           </h2>
-          <p className="text-slate-600 leading-relaxed mb-12">
+          <p className="text-[#a3a3a3] leading-relaxed mb-12">
             {project.solution}
           </p>
 
           {/* The Result */}
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">The Result</h2>
-          <p className="text-slate-600 leading-relaxed mb-12">
+          <h2 className="text-2xl font-bold text-[#f5f5f5] mb-4">The Result</h2>
+          <p className="text-[#a3a3a3] leading-relaxed mb-12">
             {project.result}
           </p>
 
           {/* CTA */}
-          <div className="bg-slate-50 rounded-lg p-8 text-center">
-            <h3 className="text-xl font-bold text-slate-900 mb-2">
+          <div className="bg-[#111111] rounded-lg p-8 text-center">
+            <h3 className="text-xl font-bold text-[#f5f5f5] mb-2">
               Need something similar?
             </h3>
-            <p className="text-slate-600 mb-6">Let&apos;s discuss your project.</p>
+            <p className="text-[#a3a3a3] mb-6">Let&apos;s discuss your project.</p>
             <Button href="/contact">Start a Conversation</Button>
           </div>
         </div>
