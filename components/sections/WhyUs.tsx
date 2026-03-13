@@ -1,6 +1,8 @@
 'use client'
 
 import { SectionWrapper, AnimatedChild } from '@/components/ui/SectionWrapper'
+import { TiltCard } from '@/components/interactive/TiltCard'
+import { GradientOrbs } from '@/components/effects/GradientOrbs'
 
 const reasons = [
   {
@@ -27,23 +29,26 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <SectionWrapper className="py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionWrapper className="py-20 bg-[#111111] bg-dot-grid relative">
+      <GradientOrbs variant="whyus" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedChild>
           <h2 className="text-center mb-12">Why Teams Choose Simple Inc</h2>
         </AnimatedChild>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reasons.map((reason) => (
             <AnimatedChild key={reason.title}>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
-                  {reason.icon}
+              <TiltCard className="rounded-lg bg-[#1a1a1a] p-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-sky-500/10 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                    {reason.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#f5f5f5] mb-1">{reason.title}</h3>
+                    <p className="text-[#a3a3a3] leading-relaxed">{reason.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1">{reason.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{reason.description}</p>
-                </div>
-              </div>
+              </TiltCard>
             </AnimatedChild>
           ))}
         </div>
