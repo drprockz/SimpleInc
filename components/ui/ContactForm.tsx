@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import { MagneticButton } from '@/components/interactive/MagneticButton'
 
 const projectTypes = [
   'Web Application',
@@ -47,16 +48,16 @@ export function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="bg-sky-50 border border-sky-200 rounded-lg p-8 text-center">
+      <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-8 text-center">
         <div className="text-3xl mb-3">✓</div>
-        <h3 className="text-lg font-bold text-slate-900 mb-2">Message sent</h3>
-        <p className="text-slate-600">We will be in touch within 24 hours.</p>
+        <h3 className="text-lg font-bold text-[#f5f5f5] mb-2">Message sent</h3>
+        <p className="text-green-400">We will be in touch within 24 hours.</p>
       </div>
     )
   }
 
   const inputBase =
-    'w-full px-4 py-3 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors duration-150'
+    'w-full px-4 py-3 border border-[#262626] bg-[#1a1a1a] rounded-lg text-[#f5f5f5] placeholder:text-[#525252] focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors duration-150'
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -95,22 +96,24 @@ export function ContactForm() {
           className={inputBase}
         />
       </div>
-      <button
-        type="submit"
-        disabled={status === 'submitting'}
-        className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-sky-300 text-white font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
-      >
-        {status === 'submitting' ? (
-          <>
-            <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-            Sending...
-          </>
-        ) : (
-          'Send Message'
-        )}
-      </button>
+      <MagneticButton>
+        <button
+          type="submit"
+          disabled={status === 'submitting'}
+          className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-sky-500/50 text-white font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]"
+        >
+          {status === 'submitting' ? (
+            <>
+              <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+              Sending...
+            </>
+          ) : (
+            'Send Message'
+          )}
+        </button>
+      </MagneticButton>
       {status === 'error' && (
-        <p className="text-red-600 text-sm text-center">
+        <p className="text-red-400 text-sm text-center">
           Something went wrong. Email us directly at{' '}
           <a href="mailto:darshan@simpleinc.in" className="underline">
             darshan@simpleinc.in
