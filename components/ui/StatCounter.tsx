@@ -35,11 +35,11 @@ export function StatCounter({ target, suffix = '', label }: StatCounterProps) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-3xl md:text-4xl font-extrabold text-slate-900">
+      <div className="text-3xl md:text-4xl font-extrabold text-[#f5f5f5]">
         {count}
         {suffix}
       </div>
-      <div className="text-sm text-slate-500 mt-1">{label}</div>
+      <div className="text-sm text-[#525252] mt-1">{label}</div>
     </div>
   )
 }
